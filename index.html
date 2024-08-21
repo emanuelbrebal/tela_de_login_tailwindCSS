@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tela de login</title>
+</head>
+
+<body class="flex h-screen items-center justify-center bg-gray-200">
+    <div class="w-96 rounded-lg bg-white p-8 text-center shadow-lg">
+        <h2 class="mb-2 text-2xl font-bold">Login</h2>
+        <p class="mb-5 text-gray-600">Bem vindo(a), insira suas credenciais para fazer o Login</p>
+        <form>
+            <label class="mb-2 block text-left font-bold">Usuário</label>
+            <input type="text" placeholder="Usuário" required 
+            class="mb-3 w-full rounded border border-gray-300 p-1">
+
+            <label class="mb-2 block text-left font-bold">Senha</label>
+            <input type="password" placeholder="Senha" required
+            class="mb-3 w-full rounded border border-gray-300 p-1">
+
+            <div class="mb-5 flex items-center justify-between text-sm">
+                <label class="flex cursor-pointer items-center hover:underline">
+                    <input type="checkbox" class="mr-1">
+                    Lembrar de mim
+                </label>
+                <a href="#" class="ml-2 text-blue-500 hover:underline">Esqueceu sua senha?</a>
+            </div>
+
+            <button type="submit" class="w-full rounded bg-red-500 p-2 text-white hover:bg-red-700">Entrar</button>
+        </form>
+    </div>
+</body>
+
+</html>
